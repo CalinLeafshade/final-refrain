@@ -1,0 +1,33 @@
+@opening-width: 700px;
+@opening-height: 400px;
+
+.opening {
+    position: fixed;
+    left: 50%;
+    width: @opening-width;
+    margin-left: -@opening-width / 2;
+    top: 50%;
+    height: @opening-height;
+    margin-top: -@opening-height;
+    text-align: center;
+    
+    nav {
+        ul {
+            padding: 0;
+        }
+        a {
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+        li {
+            display: inline-block;
+            &:not(:last-child):after {
+                content: '|';
+                color: lighten(@black, 50%);
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+    
+}

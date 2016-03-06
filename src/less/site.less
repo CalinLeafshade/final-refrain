@@ -1,0 +1,29 @@
+@import "normalize.less";
+@import "typebase.less";
+@import "type.less";
+@import "start.less";
+@import "transitions.less";
+@import "grid.less";
+@import "main.less";
+@import "page.less";
+
+
+@white: #fafafa;
+@black: #333;
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: @white;
+    color: @black;
+}
+
+#main-view {
+    transition-duration: @transitionDuration;
+}
+
+.container {
+    position: relative;
+}

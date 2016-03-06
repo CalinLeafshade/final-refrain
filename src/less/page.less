@@ -1,0 +1,42 @@
+
+#sub-view {
+    transition-duration: 0.7s;
+}
+
+article.page {
+    
+    //position: absolute;
+    #sub-view.ng-enter & {
+        
+        header {
+            transition: all 0.7s ease-in-out;
+            transform: translate(0, 50px);
+            opacity: 0;
+        }
+        
+        main {
+            transition: all 0.5s ease-in-out;
+            transform: translate(0, 50px);
+            transition-delay: 0.2s;
+            opacity: 0;
+        }
+        
+    }
+    
+    #sub-view.ng-leave &, #sub-view.ng-enter & {
+        
+        position: absolute;
+        padding-right: 15px;
+        
+    }
+    
+    #sub-view.ng-enter-active & {
+        
+        header, main {
+            transform: translate(0,0);
+            opacity: 1;
+        }
+        
+    }
+    
+}

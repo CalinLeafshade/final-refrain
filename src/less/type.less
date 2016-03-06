@@ -1,0 +1,30 @@
+body {
+    font-family: "Open Sans", arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.brand {
+    font-family: 'EB Garamond', garamond, serif;
+}
+
+[ng-click],
+[ui-sref],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none !important;
+    color: @black;
+    transition: all 0.3s @defaultEasing;
+
+    &:hover {
+        color: lighten(@black, 30%);
+    }
+
+}
+
+p.subtitle {
+    margin-top: 0;
+    text-transform: uppercase;
+}
